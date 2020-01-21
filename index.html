@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class=" overlay general-container">
+        <div class="form-container">
+            <div class="form-container__text">
+                <div class="form-title">
+                    <p>es hora de</p>
+                    <h2>comenzar</h2>
+                </div>
+            </div>
+            <form class="form-container__form" id="form">
+                <div class="form-email">
+                    <label for="email">e-mail</label>
+                    <input type="text" name="email" id="email" onfocusout="controlarEmail()"/>
+                    <span class="form-validation__text"></span>
+                </div>
+                <div class="form-password">
+                    <div>
+                        <label for="email">password</label>
+                        <span class="form-password__require">al menos cinco letras y un número</span>
+                    </div>
+                    <input type="password" name="password" id="password" onfocusout="controlarPassword()" />
+                    <span class="form-validation__text"></span>
+                    <div class="form-password__button">
+                        <input type="checkbox" onclick="mostrarContraseña()"/>
+                        <span>mostrar contraseña</span>
+                    </div>
+                </div>
+                <input type="submit" value="registrarse">
+            </form>
+        </div>    
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
